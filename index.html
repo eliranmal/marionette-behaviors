@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>marionette behaviors</title>
+        <link href="styles/styles.css" rel="stylesheet" media="screen" />
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script src="lib/jquery.js"></script>
+        <script src="lib/underscore.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="lib/backbone.marionette.js"></script>
+
+        <script>
+            var App = new Marionette.Application();
+        </script>
+
+        <!-- set behaviors lookup to point to a shared namespace -->
+        <!-- (not needed when using behaviorClass) -->
+        <script src="scripts/behaviors.js"></script>
+
+        <script src="scripts/collapsible-behavior.js"></script>
+        <script src="scripts/panel-view.js"></script>
+        <script src="scripts/init.js"></script>
+
+        <script>
+            $(function() {
+                App.start();
+            });
+        </script>
+    </body>
+</html>

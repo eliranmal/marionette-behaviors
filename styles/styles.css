@@ -1,0 +1,93 @@
+
+/* reset */
+
+html, body, div, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* baseline */
+
+p {
+  margin-bottom: .7em;
+}
+
+body {
+  padding: 6em;
+  font: 13px 'fantasy';
+  color: #666;
+  background-color: #000;
+}
+
+
+/* custom */
+
+.panel {
+  border-radius: 5px;
+  background-color: #e2e2e2;
+}
+
+.panel .header,
+.panel .content {
+  padding: .7em 1em;
+  text-transform: lowercase;
+}
+
+.panel .header {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.panel .content {
+  padding-top: 1em;
+}
+
+.panel .header .icon {
+  float: right;
+  font-size: 1.5em;
+}
+
+/* use a state defined by the behavior */
+
+.panel.view-expanded .header {
+  border-bottom: 1px dashed;
+}
+
+.panel .header .icon:before {
+  display: inline-block;
+}
+
+.panel.view-expanded .header .icon:before {
+  content: '\2303';
+}
+
+.panel.view-collapsed .header .icon:before {
+  content: '\2304';
+  margin-top: -.45em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
